@@ -57,7 +57,10 @@ export default {
       daysDelayed: 'Days Delayed',
       priority: 'Priority',
       unitsShort: 'units short',
-      days: 'days'
+      days: 'days',
+      actions: 'Actions',
+      createPO: 'Create PO',
+      viewPO: 'View PO'
     },
     topProducts: {
       title: 'Top Products by Revenue',
@@ -353,6 +356,31 @@ export default {
     excluded: 'Excluded',
     noItems: 'No restocking needed for current filters',
     daysDelayed: '{days} days delayed'
+  },
+
+  // Backlog
+  backlog: {
+    title: 'Backlog Management',
+    subtitle: 'Track and resolve inventory shortages',
+    loading: 'Loading backlog...',
+    highPriority: 'High Priority',
+    mediumPriority: 'Medium Priority',
+    lowPriority: 'Low Priority',
+    totalItems: 'Total Backlog Items',
+    cardTitle: 'Backlog Items',
+    noItems: 'No backlog items — all orders can be fulfilled!',
+    table: {
+      orderId: 'Order ID',
+      sku: 'SKU',
+      itemName: 'Item Name',
+      quantityNeeded: 'Quantity Needed',
+      quantityAvailable: 'Quantity Available',
+      shortage: 'Shortage',
+      daysDelayed: 'Days Delayed',
+      priority: 'Priority'
+    },
+    unitsShort: 'units short',
+    days: 'days'
   },
 
   // Reports

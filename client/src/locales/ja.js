@@ -57,7 +57,10 @@ export default {
       daysDelayed: '遅延日数',
       priority: '優先度',
       unitsShort: '単位不足',
-      days: '日'
+      days: '日',
+      actions: 'アクション',
+      createPO: '発注作成',
+      viewPO: '発注確認'
     },
     topProducts: {
       title: '収益別トップ製品',
@@ -353,6 +356,31 @@ export default {
     excluded: '除外',
     noItems: '現在のフィルターでは補充不要です',
     daysDelayed: '{days}日遅延'
+  },
+
+  // Backlog
+  backlog: {
+    title: 'バックログ管理',
+    subtitle: '在庫不足の追跡と解決',
+    loading: 'バックログを読み込み中...',
+    highPriority: '高優先度',
+    mediumPriority: '中優先度',
+    lowPriority: '低優先度',
+    totalItems: 'バックログ品目数',
+    cardTitle: 'バックログ品目',
+    noItems: 'バックログなし — すべての注文を履行できます！',
+    table: {
+      orderId: '注文ID',
+      sku: 'SKU',
+      itemName: '品目名',
+      quantityNeeded: '必要数量',
+      quantityAvailable: '在庫数量',
+      shortage: '不足',
+      daysDelayed: '遅延日数',
+      priority: '優先度'
+    },
+    unitsShort: '単位不足',
+    days: '日'
   },
 
   // Reports

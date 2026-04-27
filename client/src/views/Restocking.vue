@@ -66,7 +66,7 @@
                 :class="{ 'row-excluded': !item.within_budget }"
               >
                 <td>
-                  <div class="item-name">{{ item.name }}</div>
+                  <div class="item-name">{{ translateProductName(item.name) }}</div>
                   <div class="item-sku">{{ item.sku }}</div>
                 </td>
                 <td>{{ item.warehouse }}</td>
@@ -83,7 +83,7 @@
                   </div>
                 </td>
                 <td>
-                  <span :class="['badge', item.trend]">{{ item.trend }}</span>
+                  <span :class="['badge', item.trend]">{{ t('trends.' + item.trend) }}</span>
                   <div v-if="item.days_delayed" class="days-delayed">
                     {{ t('restocking.daysDelayed', { days: item.days_delayed }) }}
                   </div>
@@ -117,7 +117,7 @@ export default {
   name: 'Restocking',
   setup() {
     const { selectedLocation, selectedCategory, getCurrentFilters } = useFilters()
-    const { t, currentLocale, currentCurrency } = useI18n()
+    const { t, currentLocale, currentCurrency, translateProductName } = useI18n()
 
     const loading = ref(true)
     const error = ref(null)
@@ -169,7 +169,7 @@ export default {
       t, loading, error,
       budgetCeiling, recommendations,
       recommendationsWithBudget, totalEstimatedCost, itemsWithinBudget,
-      formatCurrency
+      formatCurrency, translateProductName
     }
   }
 }
